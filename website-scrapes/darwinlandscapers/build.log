@@ -1,0 +1,13 @@
+
+> netlify-site@0.1.0 build
+> next build
+
+
+> Build error occurred
+Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig (/Volumes/KINGSTON/projects/andrea_the_assistantv2/website-scrapes/darwinlandscapers/netlify-site/node_modules/next/dist/server/config.js:786:19)
+    at async Span.traceAsyncFn (/Volumes/KINGSTON/projects/andrea_the_assistantv2/website-scrapes/darwinlandscapers/netlify-site/node_modules/next/dist/trace/trace.js:151:20)
+    at async /Volumes/KINGSTON/projects/andrea_the_assistantv2/website-scrapes/darwinlandscapers/netlify-site/node_modules/next/dist/build/index.js:379:28
+    at async Span.traceAsyncFn (/Volumes/KINGSTON/projects/andrea_the_assistantv2/website-scrapes/darwinlandscapers/netlify-site/node_modules/next/dist/trace/trace.js:151:20)
+    at async build (/Volumes/KINGSTON/projects/andrea_the_assistantv2/website-scrapes/darwinlandscapers/netlify-site/node_modules/next/dist/build/index.js:374:9)
+    at async main (/Volumes/KINGSTON/projects/andrea_the_assistantv2/website-scrapes/darwinlandscapers/netlify-site/node_modules/next/dist/bin/next:155:5)

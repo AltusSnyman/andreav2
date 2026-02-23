@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Darwin Landscapers Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "primary-dark": "#0eb50e",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a331a",
+                        "text-main": "#111811",
+                        "text-light": "#ffffff",
+                        "text-muted": "#4b5563",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem", // rounded-lg
+                        "lg": "0.75rem", // rounded-xl
+                        "xl": "1rem", // rounded-2xl
+                        "full": "9999px",
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean horizontal scrolls */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-slate-100 font-sans antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto bg-surface-light dark:bg-surface-dark shadow-2xl">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between bg-surface-light/90 dark:bg-surface-dark/90 p-4 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-2">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary-dark dark:text-primary">
+<span class="material-symbols-outlined">yard</span>
+</div>
+<h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-tight">Darwin Landscapers</h2>
+</div>
+<button class="flex items-center justify-center p-2 text-text-main dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</header>
+<!-- Hero Section -->
+<div class="relative w-full h-[480px] flex flex-col items-center justify-end pb-12 px-6 text-center overflow-hidden">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Lush green tropical garden with sunlight filtering through leaves" class="h-full w-full object-cover" data-alt="Lush green tropical garden with sunlight filtering through leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyrrn5-6CvdT7FEzi7MQ0hi1dejwvOsDQnt-IR3cwF7_xJAVi-rPWheTE5MItFqMsd1ONKnnOvCGrHzy8x0c6dO3nFY43xF8cbbZ1zJM7rYacY_UCjnpiS7yWUQyXaPEoiGwQhyQMDxf6i-0U8yXe1JMQDAJBFNAOCo3afx2sq0SIqiOHIEbySC0b3WtN3YX7qzEkVVuyiynC7bGV5IKm1aFxG88-cjQEO1M6hXPRKbWbHlYWXSn64zduAm0ukd0W0n7dKdLse"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 flex flex-col gap-4 w-full max-w-sm">
+<div class="inline-flex items-center justify-center gap-1.5 self-center rounded-full bg-white/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm border border-white/10">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+                    Licensed &amp; Insured
+                </div>
+<h1 class="text-white text-4xl font-black leading-[1.1] tracking-tight">
+                    Transforming Darwin,<br/>One Garden at a Time.
+                </h1>
+<p class="text-gray-200 text-sm font-medium leading-relaxed px-2">
+                    Professional landscaping, maintenance, and design services tailored for the Territory lifestyle.
+                </p>
+<button class="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-primary hover:bg-primary-dark transition-colors h-14 px-6 text-text-main text-base font-bold shadow-[0_4px_14px_0_rgba(19,236,19,0.39)]">
+<span>Get a Free Quote</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Social Proof Section -->
+<section class="px-4 py-8 bg-surface-light dark:bg-surface-dark">
+<div class="flex flex-col gap-6">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 mb-1">
+<span class="text-3xl font-black text-text-main dark:text-white">5.0</span>
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-xl fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-xl fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-xl fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-xl fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-xl fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Based on 150+ Google Reviews</p>
+</div>
+<div class="flex -space-x-3">
+<img alt="Portrait of a happy customer" class="inline-block size-10 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover" data-alt="Portrait of a happy customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuiCgCKKjQps8QU4yV3-iQ18HioU1VDYDQTDFCtpmiT4f7b54CySeezgoKTgeSPGpolViNjUAh3Cf9TEzJjJxSe4LYliuiCv1IvGrtEwWXAE5rev4Vd77AwC8_N_OrRetd4hOwq2-GcunBG9ZlJ2IBX6-eTLNUPi6B4uBwzVjZWjWGBkaI21Prf5ukQXtfZ9SCnIN26_q-JY4FoTxJETkwdttRL8jAeDInPvW34Yd3scOEX5DQizehBFE1fL4IQzFXzuHjTX5K"/>
+<img alt="Portrait of a male client" class="inline-block size-10 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover" data-alt="Portrait of a male client" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaZGROihTE-ieCcOKW2cDyGfrKmElDp-7lmMT87zC1m10j9bo9rkEeUoXtGnuyM-imXgz2qXNl1L4OffUlQKLDCdI_qmRKUyFAzrlZBFJt88Zc_XjsbzbstJA493wXdzek6kqQ1ExJhkvL1_V69eYOot1v7YWBHUohE_VOLpXS7hrEOYDpcVzanUjcpkjKv1gw9az8ebOsj0Fw0k9jdM6fjQd670euD1GqPOhLnO6J1Y7eRc6NB93MKkZX0iBpKOh7oSOmiCzW"/>
+<img alt="Portrait of a smiling man" class="inline-block size-10 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover" data-alt="Portrait of a smiling man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3SZ-KQRYohPwMmLR0kX1uiVLHdPl6t0OPdN-xSFTT1w3ZQtjCXzaPuq0mRudjB3TrKpg6pkK4T-PcGQhVG_dULCfPIW-llnMNgCUxCO-oK8b-G8se8ZTsQ35Jfu28Yum3JxQBr7ln-mkpuY1Ljj2l2H2GzqA7rOy0w24PmwL8LBouGbQ50e26h5NS5nJOqwgcKQXL9CYt6tNPW9Vkw5lg4Y5MJed1y_CnAidSytJEozbz70DeZIgr8KKCxJiqt9NmM6oas26R"/>
+<div class="flex size-10 items-center justify-center rounded-full ring-2 ring-white dark:ring-gray-800 bg-gray-100 dark:bg-gray-700 text-xs font-bold text-gray-600 dark:text-gray-300">+147</div>
+</div>
+</div>
+<!-- Review Bars -->
+<div class="space-y-2">
+<div class="flex items-center gap-3">
+<span class="text-xs font-semibold w-3 text-right">5</span>
+<div class="h-2 flex-1 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 96%"></div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-semibold w-3 text-right">4</span>
+<div class="h-2 flex-1 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden">
+<div class="h-full rounded-full bg-primary/40" style="width: 4%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="px-4 pb-8 pt-2">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-bold text-text-main dark:text-white tracking-tight">Our Services</h3>
+<a class="text-primary-dark dark:text-primary text-sm font-semibold hover:underline" href="#">View All</a>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Service Card 1 -->
+<div class="group flex flex-col gap-3 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex size-10 items-center justify-center rounded-full bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 group-hover:bg-primary group-hover:text-text-main transition-colors">
+<span class="material-symbols-outlined">grass</span>
+</div>
+<h2 class="text-text-main dark:text-gray-100 text-sm font-bold">Lawn Care</h2>
+</div>
+<!-- Service Card 2 -->
+<div class="group flex flex-col gap-3 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex size-10 items-center justify-center rounded-full bg-stone-50 dark:bg-stone-900/20 text-stone-700 dark:text-stone-400 group-hover:bg-primary group-hover:text-text-main transition-colors">
+<span class="material-symbols-outlined">grid_view</span>
+</div>
+<h2 class="text-text-main dark:text-gray-100 text-sm font-bold">Paving</h2>
+</div>
+<!-- Service Card 3 -->
+<div class="group flex flex-col gap-3 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex size-10 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 group-hover:bg-primary group-hover:text-text-main transition-colors">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<h2 class="text-text-main dark:text-gray-100 text-sm font-bold">Irrigation</h2>
+</div>
+<!-- Service Card 4 -->
+<div class="group flex flex-col gap-3 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex size-10 items-center justify-center rounded-full bg-orange-50 dark:bg-orange-900/20 text-orange-700 dark:text-orange-400 group-hover:bg-primary group-hover:text-text-main transition-colors">
+<span class="material-symbols-outlined">fence</span>
+</div>
+<h2 class="text-text-main dark:text-gray-100 text-sm font-bold">Retaining Walls</h2>
+</div>
+<!-- Service Card 5 -->
+<div class="group flex flex-col gap-3 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex size-10 items-center justify-center rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400 group-hover:bg-primary group-hover:text-text-main transition-colors">
+<span class="material-symbols-outlined">potted_plant</span>
+</div>
+<h2 class="text-text-main dark:text-gray-100 text-sm font-bold">Garden Design</h2>
+</div>
+<!-- Service Card 6 -->
+<div class="group flex flex-col gap-3 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex size-10 items-center justify-center rounded-full bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 group-hover:bg-primary group-hover:text-text-main transition-colors">
+<span class="material-symbols-outlined">forest</span>
+</div>
+<h2 class="text-text-main dark:text-gray-100 text-sm font-bold">Tree Lopping</h2>
+</div>
+</div>
+</section>
+<!-- Recent Projects Carousel -->
+<section class="py-8 bg-gray-50 dark:bg-white/5">
+<div class="px-4 mb-4">
+<h3 class="text-xl font-bold text-text-main dark:text-white tracking-tight">Recent Transformations</h3>
+<p class="text-sm text-gray-500 mt-1">Check out our latest work around Darwin.</p>
+</div>
+<div class="flex gap-4 overflow-x-auto px-4 pb-4 no-scrollbar snap-x snap-mandatory">
+<!-- Project 1 -->
+<div class="min-w-[280px] snap-center rounded-2xl overflow-hidden bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="relative h-48 w-full">
+<img alt="Modern backyard patio with stone paving" class="h-full w-full object-cover" data-alt="Modern backyard patio with stone paving" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtKA-bv2Gxo1kz__tCnomO91IRvB3WVrnWjXkCfxRJ3zDW1c36Hynri2TCOrWEq6iwqzFEgCIxmg3WVBXk08zbv4DFNZ2vDiTS890YEfFcqUEFu7CyHKl87-45FKqxvAahDaxJv8Qkt2sBieprqeRfpk18kJXMT76ka6ZsPLJnqwp9WOm_HACxK_OwwrCQUmd260WZsIyQF4Qgl-2BX3CXV8D-FZuY9ZsrjUkN_I_y8GEUwKLmEHzgK4cBM9fyaQJHrgIoB7Wa"/>
+<div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-xs font-bold text-white">
+                            After
+                        </div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-text-main dark:text-white">Backyard Renovation</h4>
+<p class="text-xs text-gray-500 mt-1">Fannie Bay • Paving &amp; Softscaping</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="min-w-[280px] snap-center rounded-2xl overflow-hidden bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="relative h-48 w-full">
+<img alt="Manicured lawn with flower beds" class="h-full w-full object-cover" data-alt="Manicured lawn with flower beds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjqDUy-jYFdf1HTRx2d9EaG-LXlQXnf_pUzsumNAsbYb2u8Rrdi78yyWO_bbwtChR3NVcYqPRn2vRBfiGOZj0FSN9LDJXceABMIv9jqVH8MNeYiw6WkaTHSgCkkE20jkBxa0DXIFa-CbBnmMcsaBKutdMuHhdhhMPcWRZubIMVpyPklIT7d-bklFSQvny2WqE26Edl69Mo0CC96uYUw_1f3I7t6W9SaRntOY0LKUOfDL9R1xSVNZpoYpvq3LtzfEzVLFFksZp3"/>
+<div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-xs font-bold text-white">
+                            Maintained
+                        </div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-text-main dark:text-white">Commercial Lawn Care</h4>
+<p class="text-xs text-gray-500 mt-1">Palmerston • Weekly Maintenance</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="min-w-[280px] snap-center rounded-2xl overflow-hidden bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="relative h-48 w-full">
+<img alt="Sprinkler system watering green grass" class="h-full w-full object-cover" data-alt="Sprinkler system watering green grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBIYZTnLX1CP-8UgvtkFMXlgRZXIUSe4jfUSWz9mOrvql89Hn59NY8PywNXMi_0MYbcXrg1ezMO9igV3i_30aEerWSJG83Dnp97b_hlnJZ4M4yr4qGOaKf203cKSo8_LexBOmTI1bxsHBhTGvOLmP1x0rXn0yu8m4JcLLWX8ds5Lw3dQ_iaSLc1Qae1tXUbKSji6HmtXCiJPmZVZPW_YikPoKbCCgiwhfiDSIKr56I4jTbaojPeZICYTc6nJufvSAwkWk-Ad0b"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-text-main dark:text-white">Smart Irrigation Install</h4>
+<p class="text-xs text-gray-500 mt-1">Casuarina • Water Efficiency</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="px-4 py-10">
+<div class="relative rounded-2xl bg-primary/10 p-6 dark:bg-primary/5">
+<span class="material-symbols-outlined absolute -top-3 left-6 bg-surface-light dark:bg-surface-dark text-4xl text-primary p-1 rounded-full">format_quote</span>
+<p class="pt-4 text-base font-medium leading-relaxed text-text-main dark:text-gray-200">
+                    "The team was punctual, professional, and my yard looks amazing. They transformed our overgrown mess into a tropical paradise. Highly recommend!"
+                </p>
+<div class="mt-6 flex items-center gap-3">
+<div class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
+<img alt="Sarah T profile picture" class="h-full w-full object-cover" data-alt="Sarah T profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEjvxXn_-TyxlK3NQ-ECcGi8-w0grvjga-r3fSHXmMPOlLLw_aursqUQ-gTYrby0-BmrHJuWJaMwvO5ahFiZE2Mx4hnM30HIvUEjVHTpUzYGUtDEm_hdgPUA6zwPKI76FnfbuAeMLRHdXxoN6_BPOAaSl0RtPLrP-YOGiaecHM36HqS_9cpgzn90Qj4o9zD-Iplalri4ad0Lb0c7JxUQSzvzWKGIWlzxE18zBujUMcKgTSZ18cNWiQDKRIzBmNFkV9Bucsh-Z1"/>
+</div>
+<div>
+<p class="font-bold text-text-main dark:text-white text-sm">Sarah T.</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Resident in Palmerston</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10 px-6">
+<div class="flex flex-col gap-8">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="flex size-8 items-center justify-center rounded-full bg-primary text-black">
+<span class="material-symbols-outlined text-lg">yard</span>
+</div>
+<h3 class="font-bold text-lg">Darwin Landscapers</h3>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                        Proudly serving Darwin and surrounding areas with top-tier landscaping solutions since 2010.
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-bold text-white mb-3 text-sm uppercase tracking-wider">Service Areas</h4>
+<ul class="space-y-2 text-sm text-gray-400">
+<li>Darwin City</li>
+<li>Palmerston</li>
+<li>Casuarina</li>
+<li>Nightcliff</li>
+<li>Berrimah</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white mb-3 text-sm uppercase tracking-wider">Contact</h4>
+<ul class="space-y-2 text-sm text-gray-400">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">call</span>
+                                (08) 8900 1234
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">mail</span>
+                                hello@darwin.com
+                            </li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 mt-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+<p>© 2023 Darwin Landscapers. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="hover:text-white" href="#">Privacy</a>
+<a class="hover:text-white" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button for Mobile -->
+<div class="fixed bottom-6 right-4 z-40 md:hidden">
+<button class="flex size-14 items-center justify-center rounded-full bg-primary text-black shadow-lg hover:bg-primary-dark transition-all active:scale-95">
+<span class="material-symbols-outlined text-2xl">call</span>
+</button>
+</div>
+</div>
+</body></html>
