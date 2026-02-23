@@ -1,0 +1,87 @@
+.widget-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+}
+
+.voice-widget-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(3, 105, 161, 0.39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+}
+
+.voice-widget-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px 0 rgba(3, 105, 161, 0.45);
+}
+
+.voice-widget-btn.connecting {
+    animation: pulse-orange 1.5s infinite;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.voice-widget-btn.active {
+    animation: siri-spin 2s linear infinite, glow 2s ease-in-out infinite alternate;
+    background: conic-gradient(from 0deg, #0369a1, #0ea5e9, #bae6fd, #0ea5e9, #0369a1);
+}
+
+@keyframes pulse-orange {
+    0% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(245, 158, 11, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+    }
+}
+
+@keyframes siri-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(14, 165, 233, 0.5), 0 0 20px rgba(14, 165, 233, 0.3);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgba(14, 165, 233, 0.8), 0 0 30px rgba(14, 165, 233, 0.6);
+    }
+}
+
+.voice-widget-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.voice-widget-btn.active svg {
+    /* Counter-rotate SVG so it stays upright while the button spins */
+    animation: siri-spin-reverse 2s linear infinite;
+}
+
+@keyframes siri-spin-reverse {
+    100% {
+        transform: rotate(-360deg);
+    }
+}

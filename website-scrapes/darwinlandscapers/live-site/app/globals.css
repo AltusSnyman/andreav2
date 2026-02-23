@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@source "../components";
+
+@theme {
+  --color-primary: #13ec13;
+  --color-primary-dark: #0eb50e;
+  --color-background-light: #f6f8f6;
+  --color-background-dark: #102210;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #1a331a;
+  --color-text-main: #111811;
+  --color-text-light: #ffffff;
+  --color-text-muted: #4b5563;
+
+  --font-sans: Inter, sans-serif;
+  --font-display: Inter, sans-serif;
+}
+
+/* Custom Utilities for Glassmorphism */
+@utility glass-panel {
+  @apply backdrop-blur-md bg-white/10 border border-white/20 shadow-xl;
+}
+
+@utility glass-panel-dark {
+  @apply backdrop-blur-md bg-black/20 border border-white/10 shadow-xl;
+}
+
+@utility text-glow {
+  text-shadow: 0 0 20px rgba(19, 236, 19, 0.5);
+}
+
+@utility text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Base Styles */
+body {
+  @apply bg-background-light text-text-main antialiased;
+}
+
+/* Dark Mode Support (if using 'class' strategy or system preference) */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-background-dark text-text-light;
+  }
+}

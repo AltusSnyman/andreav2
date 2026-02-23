@@ -1,0 +1,99 @@
+/* public/widget.css */
+.widget-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+}
+
+.voice-widget-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #13ec13, #0eb50e);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(19, 236, 19, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.voice-widget-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(19, 236, 19, 0.5);
+}
+
+.voice-widget-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    z-index: 2;
+    position: relative;
+}
+
+/* Connecting State: Orange Pulse */
+.voice-widget-btn.connecting {
+    background: linear-gradient(135deg, #fb923c, #ea580c);
+    animation: pulse-orange 1.5s infinite;
+    box-shadow: 0 0 15px rgba(234, 88, 12, 0.6);
+}
+
+@keyframes pulse-orange {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(234, 88, 12, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(234, 88, 12, 0);
+    }
+}
+
+/* Active State: Siri Spin */
+.voice-widget-btn.active {
+    background: white;
+    box-shadow: 0 0 20px rgba(19, 236, 19, 0.8), inset 0 0 10px rgba(19, 236, 19, 0.4);
+}
+
+.voice-widget-btn.active::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent 0%, #13ec13 25%, #0eb50e 50%, #13ec13 75%, transparent 100%);
+    animation: siri-spin 2s linear infinite;
+    z-index: 0;
+}
+
+.voice-widget-btn.active::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.voice-widget-btn.active svg {
+    fill: #13ec13;
+}
+
+@keyframes siri-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
